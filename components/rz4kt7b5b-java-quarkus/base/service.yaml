@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: rz4kt7b5b-java-quarkus
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rz4kt7b5b-java-quarkus 
+  name: rz4kt7b5b-java-quarkus
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: rz4kt7b5b-java-quarkus 
